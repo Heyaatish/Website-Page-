@@ -159,6 +159,7 @@ body {
     height: 60px;
     background-color: rgb(29, 29, 29);
     position: fixed;
+
 }
 
 .header__div {
@@ -182,21 +183,20 @@ body {
     color: rgb(102, 241, 111);
 }
 
-.nav {
+/* .nav {
     margin-left: 200px;
-}
+} */
 
 .image_mavic {
     width: 1000px;
     height: 300px;
+    object-fit: cover;
 }
 
 .image_mavic>img {
     width: 100%;
     height: 100%;
 }
-
-
 
 .section__first {
     background-color: rgb(40, 39, 39);
@@ -235,11 +235,11 @@ body {
     font-size: 16px;
     text-transform: capitalize;
     margin-bottom: 30px;
-    /* width: 500px; */
+
 }
 
 .div__heading>a {
-    padding: 20;
+    padding: 20px;
     color: black;
     background-color: rgb(20, 226, 20);
     text-decoration: none;
@@ -260,22 +260,20 @@ body {
     flex-wrap: wrap;
 }
 
-.div__img>img {
+/* .div__img>img {
     width: 400px;
     height: 250px;
     object-fit: cover;
-
-}
-
-/* img{
-    flex: 0 0 30%;
 } */
 
+.div__img {
+    flex: 0 0 30%;
+}
 
-img {
+/* img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .section__three {
     background-color: rgb(40, 39, 39);
@@ -314,6 +312,7 @@ hr {
     justify-content: space-between;
     padding: 100px 0;
     padding-bottom: 150px;
+    flex-wrap: wrap;
 }
 
 .image_drone_kit {
@@ -356,6 +355,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 0 32px;
+    flex-wrap: wrap;
 }
 
 .banner_group_image__1 {
@@ -421,7 +421,7 @@ img {
 .image_new_rectangle>img {
     width: 250px;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 img {
@@ -445,31 +445,29 @@ img {
     padding: 0 32px;
 }
 
-.new__launches__1>img {
+.new__launches__1 {
     width: 400px;
     height: 350px;
-   object-fit: cover;
+    object-fit: contain;
 }
 
-img{
-    flex: 0 0 32%;
+img {
+    height: 100%;
+    width: 100%;
 }
+
 .customers_section_reviews {
     background-color: rgb(40, 39, 39);
     padding: 100px;
-
 }
 
 .servies_online {
     background-color: white;
-    padding: 40px 0;
-    width: 400px;
+    flex: 0 0 35%;
 }
 
 .services__online__repair_1 {
-    margin: 10px 0;
-    padding-left: 80px;
-    padding-right: 20px;
+    padding: 20px 30px;
 }
 
 .services__online__repair_1>h3 {
@@ -484,11 +482,8 @@ img{
 }
 
 .services__online__repair_2 {
-    padding: 20px 0;
+    padding: 20px 30px;
     background-color: aliceblue;
-    padding-left: 80px;
-    padding-right: 20px;
-
 }
 
 .services__online__repair_2>h3 {
@@ -529,16 +524,13 @@ img{
 }
 
 .services__online__repair3 {
-    padding: 20px 0;
+    padding: 20px 30px;
     background-color: rgb(20, 226, 20);
-    padding-left: 80px;
-    padding-right: 20px;
 
 }
 
 .services__online__repair_4 {
-    padding-left: 80px;
-    padding-right: 20px;
+    padding: 20px 30px;
 }
 
 .services__online__repair_4>h3 {
@@ -556,6 +548,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5%;
 }
 
 .width__review {
@@ -626,7 +620,7 @@ img{
 }
 
 .customer__reviews {
-    margin-bottom: 80px;
+    flex: 1 1 60%;
 }
 
 .brands {
@@ -641,9 +635,6 @@ img{
     color: rgb(20, 226, 20);
 }
 
-.tag {
-    width: 450px;
-}
 
 .companys__logo__brands {
     display: flex;
@@ -697,10 +688,9 @@ img{
 .thermal__box {
     background-color: white;
     padding-top: 80px;
-
     border: 2px solid rgb(20, 226, 20);
     border-radius: 8px;
-
+    flex: 0 0 30%;
 }
 
 .brands__thermal__drone {
@@ -750,6 +740,7 @@ img{
     justify-content: space-between;
     gap: 40px;
     padding-bottom: 150px;
+    flex-wrap: wrap;
 }
 
 .drone__gallery {
@@ -759,8 +750,11 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-wrap: wrap;
+    gap: 40px;
 }
+
+
 
 .section__gallery {
     background-color: rgb(40, 39, 39);
@@ -786,28 +780,36 @@ img{
 }
 
 
+
+.box__1 {
+    flex: 1 1 46%;
+}
+
+.box__2 {
+    flex: 1 1 46%;
+}
+
 .child__1 {
-    width: 580px;
-    height: 280px;
+    flex: 0 0 100%;
+    height: 200px;
     background-color: white;
     margin-bottom: 40px;
 }
 
 .child__2 {
-    width: 580px;
-    height: 151px;
+    flex: 0 0 100%;
+    height: 300px;
     background-color: white;
     margin-bottom: 40px;
 }
 
 .footer {
     background-color: rgb(40, 39, 39);
+    padding: 0 32px;
 }
 
 .footer__logo {
     width: 300px;
-    margin-left: 32px;
-
 }
 
 .button__email__subscriber {
@@ -820,7 +822,7 @@ img{
     margin-left: 32px;
     padding-right: 80px;
     padding: 3px 8px;
-    border-radius: 12px;
+
 }
 
 button {
@@ -828,10 +830,9 @@ button {
     background-color: rgb(20, 226, 20);
     font-weight: 700;
     border: none;
-    border-radius: 12px;
+
 
 }
-
 
 .payment__method {
     margin-left: 32px;
@@ -855,7 +856,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 100px;
+    /* margin-right: 80px; */
+    flex-wrap: wrap;
 }
 
 
@@ -896,7 +898,7 @@ button {
     margin: 8px 0;
     color: white;
     font-size: 13px;
-    text-transform: capitalize;
+    text-transform: cfooter___divapitalize;
 }
 
 .gaming__div>h3 {
@@ -917,6 +919,7 @@ button {
     justify-content: space-between;
     margin-top: 20px;
     padding: 0 32px;
+    flex-wrap: wrap;
 }
 
 .address__everse__1 {
@@ -945,75 +948,36 @@ button {
     display: none;
 }
 
-
 /* Media query for editing */
 
-@media screen and (max-width:1380px) and (min-width:1000px) {
+@media screen and (max-width:1380px) {
 
-
-    .logo>a>img{
+    .logo>a>img {
         width: 250px;
     }
-    
+
     .nav>ul>li>a {
-        /*   */
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
         color: white;
         font-size: 12px;
     }
-    .nav>ul{
-        width: 850px;
-        margin-right: 50px;
+
+    .nav>ul {
+        width: 700px;
     }
-    
-    
+
     .icon__nav>a>i {
         margin-left: 20px;
         color: rgb(102, 241, 111);
-    }
-    
-    .nav {
-        margin-left: 100px;
+        font-size: 14px;
     }
 
-   
-    #toggle:checked~.nav {
-        display: block;
-    }
+    /* .nav {
+        margin-left: 40px;
+    } */
 
-    .icon__nav {
-        margin-right: 20px;
-        position: fixed;
-        right: 0;
-    }
-    
-}
-
-
-
-
-
-
-@media screen and (max-width:1000px) {
-    .logo>a>img {
-        width: 200px;
-    }
-
-    .bars {
-        display: block;
-        color: white;
-        position: fixed;
-        left: 490px;
-        z-index: 59;
-        
-    }
-
-    .nav {
-        display: none;
-
-    }
 
     #toggle:checked~.nav {
         display: block;
@@ -1021,26 +985,493 @@ button {
 
     .icon__nav {
         margin-right: 20px;
-        position: fixed;
-        right: 0;
+        right: 0px;
+        font-size: 14px;
+
     }
 
-}
+    .div__heading>h1 {
+        font-size: 55px;
+    }
+
+    .div__heading>h2 {
+        font-size: 55px;
+    }
+
+    .div__heading>p {
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    .div__heading>a {
+        font-size: 15px;
+        padding: 9px 35px;
+    }
+
+    .image_mavic {
+        width: 800px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .section__div {
+        margin: 0 60px;
+    }
+
+    .image_drone_kit {
+        margin-top: 140px;
+    }
+
+    .servies_online {
+        flex: 1 1 40%;
+    }
+
+    .services__online__repair_1 {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    .services__online__repair_1>h3 {
+        font-size: 13px;
+    }
+
+    .services__online__repair_1>p {
+        font-size: 10px;
+    }
+
+    .services__online__repair_2 {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    .services__online__repair_2>h3 {
+        font-size: 13px;
+    }
+
+    .services__online__repair_2>p {
+        font-size: 10px;
+    }
+
+    .services__online__repair>h3 {
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .services__online__repair>p {
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .services__online__repair3>h3 {
+        font-size: 13px;
+    }
+
+    .services__online__repair3>p {
+        font-size: 10px;
+    }
+
+    .services__online__repair3 {
+        padding-left: 60px;
+        padding-right: 10px;
+
+    }
+
+    .services__online__repair_4 {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    .services__online__repair_4>h3 {
+        font-size: 13px;
+
+    }
+
+    .services__online__repair_4>p {
+        font-size: 10px;
+    }
+
+    .customers_heading>h3 {
+        font-size: 28px;
+    }
+
+    .customers_heading>p {
+        font-size: 13px;
+    }
+
+    .blank__customers {
+        width: 70px;
+        height: 70px;
+    }
+
+    .customer__paragraph {
+        font-size: 12px;
+    }
+
+    .customer__reviews {
+        flex: 1 1 50%;
+    }
 
 
-@media screen and (max-width:700px) {
 
-    .icon__nav>a>i {
-        display: none
-    }   
+    @media screen and (max-width:1000px) {
+        .logo>a>img {
+            width: 200px;
+        }
 
-    
+        .bars {
+            display: block;
+            color: white;
+        }
 
- 
-    
-   
+        .nav {
+            display: none;
+        }
+
+        #toggle:checked~.nav {
+            display: block;
+        }
+
+        .icon__nav {
+            margin-right: 20px;
+            padding: 0 auto;
+            right: 0;
+            font-size: 14px;
+        }
+
+        .div__heading>h1 {
+            font-size: 50px;
+        }
+
+        .div__heading>h2 {
+            font-size: 50px;
+        }
+
+        .div__heading>p {
+            font-size: 15px;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+
+        .div__heading>a {
+            font-size: 14px;
+            padding: 10px 30px;
+        }
+
+        .image_mavic {
+            width: 900px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .section__div {
+            margin: 0 50px;
+        }
+
+        .div__img {
+            flex: 0 0 48%;
+            margin-top: 30px;
+        }
+
+        .image_drone_kit {
+            flex: 0 0 48%;
+            height: 300px;
+            margin-top: 140px;
+        }
+
+        .content__kit {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .content__kit>p {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .heading__section__three {
+            text-align: center;
+            color: rgb(20, 226, 20);
+        }
+
+        .section__three__div {
+            padding: 10px 0;
+        }
+
+        .section__banner {
+            padding-top: 30px;
+        }
+
+        .banner_group_image__1 {
+            flex: 0 0 50%;
+        }
+
+        .heading__experience>h2 {
+            font-size: 25px;
+        }
+
+        .adventure_green {
+            font-size: 25px;
+        }
+
+        .new__launches__1 {
+            flex: 0 0 48%;
+        }
+
+        .services__online__repair_1>h3 {
+            font-size: 10px;
+        }
+
+        .services__online__repair_1>p {
+            font-size: 8px;
+        }
+
+        .services__online__repair_2>h3 {
+            font-size: 10px;
+        }
+
+        .services__online__repair_2>p {
+            font-size: 8px;
+        }
+
+        .services__online__repair>h3 {
+            font-size: 10px;
+        }
+
+        .services__online__repair>p {
+            font-size: 8px;
+        }
+
+        .services__online__repair3>h3 {
+            font-size: 10px;
+        }
+
+        .services__online__repair3>p {
+            font-size: 8px;
+        }
+
+        .services__online__repair_4>h3 {
+            font-size: 10px;
+        }
+
+        .services__online__repair_4>p {
+            font-size: 8px;
+            padding-bottom: 10px;
+        }
+
+        .servies_online {
+            flex: 0 0 40%;
+        }
+
+        .customers_heading>h3 {
+            font-size: 25px;
+        }
+
+        .customers_heading>p {
+            font-size: 11px;
+        }
+
+        .blank__customers {
+            width: 60px;
+            height: 60px;
+        }
+
+        .customer__paragraph {
+            font-size: 11px;
+        }
+
+        .servies_online {
+            background-color: white;
+            padding: 2px 0;
+            width: 400px;
+        }
+
+        .thermal__box {
+            flex: 0 0 45%;
+        }
+
+        .footer___div {
+            flex: 0 0 100%;
+            margin-bottom: 40px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .drone__series {
+            flex: 0 0 20%;
+            text-align: center;
+        }
+
+        .accessories__drone {
+            flex: 0 0 20%;
+            text-align: center;
+        }
+
+        .action_div {
+            flex: 0 0 20%;
+            text-align: center;
+
+        }
+
+        .gaming__div {
+            flex: 0 0 20%;
+            text-align: center;
+
+        }
+
+        .payment__method {
+            flex: 0 0 100%;
+        }
+
+        #toggle:checked~.nav {
+            display: block;
+        }
+
+     
+
+
+        @media screen and (max-width:700px) {
+
+            .icon__nav>a>i {
+                display: none
+            }
+
+            .bars {
+                position: fixed;
+                right: 0;
+                padding: 0 20px;
+            }
+
+            .div__heading>h1 {
+                font-size: 30px;
+            }
+
+            .div__heading>h2 {
+                font-size: 30px;
+            }
+
+            .div__heading>p {
+                font-size: 13px;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+            }
+
+            .div__heading>a {
+                font-size: 13px;
+                padding: 8px 30px;
+            }
+
+            .image_mavic {
+                width: 800px;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .image_mavic>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .section__div {
+                margin: 0 40px;
+            }
+
+            .div__img {
+                flex: 0 0 100%;
+                margin-top: 30px;
+                height: 280px;
+                object-fit: cover;
+            }
+
+            .image_drone_kit {
+                flex: 0 0 100%;
+
+            }
+
+            .section__banner {
+                padding-top: 5px;
+            }
+
+
+            .banner_group_image__1 {
+                flex: 0 0 100%;
+            }
+
+            .heading__experience>h2 {
+                font-size: 18px;
+            }
+
+            .adventure_green {
+                font-size: 18px;
+            }
+
+            .new__launches__1 {
+                flex: 0 0 100%;
+                margin-top: 20px;
+            }
+
+            .servies_online {
+                flex: 0 0 100%;
+            }
+
+            .customer__reviews {
+                flex: 0 0 100%;
+            }
+
+            .customers_section_reviews {
+                padding: 50px;
+            }
+
+            .images_shop {
+                text-align: center;
+            }
+
+            .image_new_rectangle {
+                width: 100%;
+            }
+
+            .thermal__box {
+                flex: 0 0 100%;
+            }
+
+            .drone__series {
+                flex: 0 0 50%;
+                margin-bottom: 40px;
+            }
+
+            .accessories__drone {
+                flex: 0 0 50%;
+                margin-bottom: 40px;
+            }
+
+            .action_div {
+                flex: 0 0 50%;
+
+            }
+
+            .gaming__div {
+                flex: 0 0 50%;
+
+            }
+
+            .address__everse__1 {
+                flex: 0 0 50%;
+            }
+
+            .address__everse {
+                flex: 0 0 50%;
+                margin-bottom: 20px;
+            }
 
 
 
+        }
+
+    }
 
 }
